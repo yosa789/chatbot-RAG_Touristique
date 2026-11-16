@@ -226,4 +226,4 @@ Les textes proviennent de pages **Wikipédia** exportées en PDF, distribuées s
 
 ## 👤 Auteur
 
-*Votre nom* · [GitHub](https://github.com/votre-profil) · [LinkedIn](https://www.linkedin.com/in/votre-profil)
+*SYounes* · [GitHub](https://github.com/yosa789) 
