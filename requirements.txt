@@ -1,0 +1,14 @@
+requests
+gradio
+pypdf
+torch
+transformers
+accelerate
+sentence-transformers
+chromadb
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+langchain-classic
+bitsandbytes
