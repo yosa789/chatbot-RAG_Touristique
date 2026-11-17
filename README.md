@@ -139,16 +139,8 @@ python evaluate.py --ville Ottawa    # Filtrer l'évaluation sur une ville spéc
 └── docs/img/                # Graphiques d'analyse de l'évaluation
 ```
 
----
 
-## ⚠️ Limites et Pistes d'Amélioration
 
-- **Évaluation par mots-clés** : Strictement binaire, elle peut pénaliser une bonne réponse reformulée sans le mot exact. L'ajout d'un *LLM-as-a-Judge* permettrait d'affiner cette mesure.
-- **Couverture du jeu de test** : Étendre `test_questions.json` des 12 villes actuelles à l'ensemble des 28 destinations de la base.
-- **Recherche hybride** : Combiner une recherche lexicale (BM25) aux vecteurs pour améliorer la précision sur les chiffres et les noms propres.
-- **Mémoire conversationnelle** : Ajouter une reformulation des questions de suivi (ex: *« Et sa superficie ? »*).
-
----
 
 👤 S.Younes
 
