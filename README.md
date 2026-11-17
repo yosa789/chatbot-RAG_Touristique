@@ -1,26 +1,25 @@
-# 🏙️ Chatbot Expert des Capitales du Monde
+# 🏙️ Chatbot Expert des Capitales du Monde (RAG Local & CPU/GPU)
 
-Un chatbot touristique en **français** basé sur une architecture **RAG** (*Retrieval-Augmented Generation*) : il répond à des questions sur une trentaine de capitales et grandes villes à partir d'une base documentaire issue de pages Wikipédia, **sans API externe payante** : tout tourne en local (CPU ou GPU).
+Un assistant conversationnel intelligent en **français** basé sur une architecture **RAG** (*Retrieval-Augmented Generation*). Il répond à des questions factuelles et touristiques sur une trentaine de capitales mondiales à partir de documents Wikipédia nettoyés, **sans aucune dépendance à une API externe payante** (le tout s'exécute entièrement en local).
 
-> Exemple : *« Quelle est la population d'Ottawa ? »*, *« Qui a conçu les bâtiments de Brasilia ? »*, *« Depuis quand Abuja est-elle la capitale du Nigeria ? »*
+> **Exemples de requêtes :** *« Quelle est la population d'Ottawa ? »*, *« Qui a conçu les bâtiments de Brasilia ? »*, *« Depuis quand Abuja est-elle la capitale du Nigeria ? »*
 
-Le projet inclut aussi une **évaluation quantitative** (99 questions de test) et une **comparaison CPU → GPU** : le passage sur une GTX 1650 divise le temps de réponse par **~5** et améliore la récupération des bons passages de **80 % à 89 %**.
-
----
-
-## ✨ Fonctionnalités
-
-- 🔎 **Recherche sémantique** multilingue dans une base vectorielle ChromaDB
-- 🏷️ **Détection automatique de la ville** visée par la question (nom de la ville ou alias : *« Eiffel » → Paris*, *« Japon » → Tokyo*…)
-- 🎯 **Filtrage par ville** + **reclassement (reranking)** des passages par un cross-encoder
-- 🤖 **Génération** de la réponse par `Qwen2.5-1.5B-Instruct`, contrainte à se baser uniquement sur le contexte
-- 🌦️ **Météo en direct** (API Open-Meteo) via une liste déroulante, indépendante du chatbot
-- 📝 **Journal d'utilisation** (`logs.csv`) exploitable dans Power BI
-- 📊 **Script d'évaluation** automatique (retrieval + réponse) avec export CSV
+Le projet intègre un pipeline complet de traitement des données, un système de **reranking**, une interface web fluide (Gradio), ainsi qu'un **module d'évaluation automatisé rigoureux** (99 questions de test).
 
 ---
 
-## 🧱 Architecture
+## ✨ Fonctionnalités Clés
+
+- 🔎 **Recherche Sémantique Avancée** : Indexation vectorielle via ChromaDB et embeddings multilingues.
+- 🎯 **Routage Intelligent** : Détection automatique de la ville ciblée dans le message (reconnaissance du nom explicite ou d'alias : *« Eiffel » → Paris*, *« Japon » → Tokyo*).
+- ⚡ **Reclassement par Reranker** : Utilisation d'un Cross-Encoder (`mmarco-mMiniLMv2`) pour trier et filtrer les 20 meilleurs candidats avant de n'en retenir que 4 pour le LLM.
+- 🤖 **Inférence Locale Sécurisée** : Propulsé par `Qwen2.5-1.5B-Instruct` (optimisé fp16 sur GPU ou exécution sur CPU).
+- 🌦️ **Micro-service Météo** : Intégration en temps réel de l'API Open-Meteo via une liste déroulante indépendante.
+- 📊 **Observabilité & Logs** : Enregistrement automatique de chaque interaction dans `logs.csv` pour un suivi analytique ultérieur (Power BI).
+
+---
+
+## 🧱 Architecture Technique
 
 ```mermaid
 flowchart LR
@@ -35,27 +34,17 @@ flowchart LR
     G --> L[(logs.csv)]
 ```
 
-| Composant | Choix technique |
-|---|---|
-| Modèle de langage | `Qwen/Qwen2.5-1.5B-Instruct` (fp16 sur GPU, CPU sinon) |
-| Embeddings | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` |
-| Reranker | `cross-encoder/mmarco-mMiniLMv2-L12-H384-v1` |
-| Base vectorielle | ChromaDB (via LangChain) |
-| Découpage | `RecursiveCharacterTextSplitter`, chunks de 500 caractères, chevauchement 100 |
-| Interface | Gradio |
-| Météo | Open-Meteo (gratuit, sans clé) |
-
-### Choix de conception notables
-
-- **Chaque chunk est préfixé par `Ville : <nom>`** à l'indexation : le morceau « sait » de quelle ville il parle, ce qui limite les confusions entre villes.
-- **Métadonnée `source`** utilisée pour filtrer la recherche sur le fichier de la ville détectée.
-- **Récupération en deux temps** : 20 candidats par similarité vectorielle, puis reclassement fin par cross-encoder, et seulement 4 passages envoyés au LLM (`K_CHUNKS = 4`).
-- **Réponses courtes** (`MAX_NEW_TOKENS = 150`, 1 à 3 phrases) pour la rapidité et la précision.
-- **Nettoyage des PDF** adapté à Wikipédia : suppression des références, numéros de notes, URL, légendes de cartes/graphiques, correction des césures.
+| Composant | Choix Technologique | Justification |
+|---|---|---|
+| **Modèle de Langage (LLM)** | `Qwen/Qwen2.5-1.5B-Instruct` | Excellent équilibre taille/performance pour tourner localement sur CPU ou petit GPU. |
+| **Embeddings** | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | Capture fine du sens sémantique multilingue. |
+| **Reranker** | `cross-encoder/mmarco-mMiniLMv2-L12-H384-v1` | Garantit une haute précision de contexte en réévaluant la pertinence croisée. |
+| **Base Vectorielle** | ChromaDB (via LangChain) | Légère, persistante en local et simple à filtrer par métadonnées. |
+| **Découpage (Chunking)** | `RecursiveCharacterTextSplitter` (500 car. / overlap 100) | Taille idéale pour les fenêtres de contexte du modèle. |
 
 ---
 
-## 🌍 Villes couvertes
+## 🌍 Villes Couvertes
 
 | | | | |
 |---|---|---|---|
@@ -71,159 +60,95 @@ Le chatbot détecte automatiquement les villes disponibles : il suffit d'ajouter
 
 ---
 
-## 📁 Structure du projet
+## 📊 Évaluation et Analyse des Performances
 
-```
-.
-├── app.py                  # Chatbot (RAG + interface Gradio + météo + logs)
-├── clean.py                # Extraction et nettoyage des PDF Wikipédia
-├── indexation.py           # Découpage + embeddings + création de ChromaDB
-├── evaluate.py             # Évaluation automatique du chatbot
-├── test_questions.json     # 99 questions de test (12 villes)
-├── requirements.txt
-├── data/                   # PDF sources et textes *_nettoye.txt
-├── chroma_db/              # Base vectorielle (générée)
-├── logs.csv                # Journal des questions (généré)
-├── evaluation_resultats.csv# Résultats détaillés de l'évaluation (généré)
-└── docs/img/               # Graphiques utilisés dans ce README
-```
+Pour s'assurer de la fiabilité du chatbot et éviter les hallucinations, un script d'évaluation rigoureux (`evaluate.py`) a été mis en place sur un jeu de test de **99 questions** réparties sur 12 villes.
+
+Chaque réponse est évaluée à l'aide d'une **normalisation stricte** (minuscules, suppression des accents et de la ponctuation) pour croiser les mots-clés attendus avec le contexte récupéré et la réponse générée.
+
+### 1. Où se perdent les erreurs ? (Analyse du Pipeline RAG)
+
+![Origine des erreurs](docs/img/02_origine_des_erreurs.png)
+
+Le taux de réussite global se stabilise autour de **75 % de réponses correctes**, pour un taux de récupération de bons passages (*retrieval*) avoisinant les **89 % sur GPU**. 
+
+Cela met en évidence une fuite d'environ 14 points entre le moment où le bon document est trouvé dans les fichiers et le moment où le LLM formule sa réponse finale : le modèle peine parfois à extraire un chiffre ou un nom propre précis au milieu d'un passage textuel bruité.
+
+### 2. Performances par Catégorie et par Ville
+
+![Réussite par ville et catégorie](docs/img/03_reussite_par_ville_et_categorie.png)
+
+- **Par catégorie de questions** : Les **dates** obtiennent les meilleurs scores de réussite (≈ 81 %), suivies de près par les **chiffres** (78 %) et les **lieux/noms** (72 %). Les questions portant sur les **personnes** s'avèrent légèrement plus délicates (71 %).
+- **Par ville** : Des villes comme *Ottawa* et *Addis-Abeba* atteignent 100 % de réussite, tandis que des capitales aux structures documentaires plus denses (*Buenos Aires*, *Canberra*, *Pretoria*) présentent un taux d'erreur plus élevé en raison de la complexité de leurs données démographiques ou historiques.
+
+### 3. Impact de la longueur de réponse sur la durée
+
+![Durée selon la longueur](docs/img/05_duree_vs_longueur.png)
+
+La durée de génération est **fortement corrélée à la longueur de la réponse produite ($r = 0,77$)**. Une réponse très courte prend environ 8,8 secondes de base, tandis qu'une réponse développée de 400 caractères monte à près de 18-20 secondes. Cela valide l'importance de contraindre le `MAX_NEW_TOKENS` et d'imposer des consignes strictes de concision dans le prompt système.
 
 ---
 
-## 🚀 Installation et utilisation
+## 🚀 Installation et Utilisation
 
-### 1. Prérequis
-
-- Python 3.10+
-- (Recommandé) un GPU NVIDIA avec PyTorch CUDA : le projet tourne avec **4 Go de VRAM** (testé sur GTX 1650)
-
+### 1. Clonage et Environnement
 ```bash
 git clone <url-du-depot>
 cd <nom-du-depot>
 python -m venv venv
-source venv/bin/activate        # Windows : venv\Scripts\activate
+source venv/bin/activate        # Sur Windows : venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-> Pour profiter du GPU, installez la version de PyTorch compatible CUDA depuis [pytorch.org](https://pytorch.org/get-started/locally/).
-
-### 2. Préparer les données
-
-Placez les PDF Wikipédia des villes dans `data/`, puis :
-
+### 2. Indexation des Données
+Placez vos fichiers PDF sources dans le dossier `data/`, puis exécutez le script de nettoyage et d'indexation :
 ```bash
-python clean.py          # génère data/<Ville>_nettoye.txt
-python indexation.py     # construit chroma_db/
+python clean.py          # Nettoie les PDF et génère les fichiers *_nettoye.txt
+python indexation.py     # Construit la base vectorielle ChromaDB
 ```
 
-> Le nom du fichier détermine le nom de la ville : `Ottawa.pdf` → `Ottawa_nettoye.txt`.
-
-### 3. Lancer le chatbot
-
+### 3. Lancer l'Application Gradio
 ```bash
 python app.py
 ```
+L'interface web locale s'ouvre sur `http://127.0.0.1:7860`.
 
-L'interface Gradio s'ouvre sur `http://127.0.0.1:7860`. Citez la ville dans la question ; sinon le chatbot cherche dans toutes les villes.
-
-### 4. Lancer l'évaluation
-
+### 4. Lancer le Module d'Évaluation
 ```bash
-python evaluate.py                       # retrieval + réponses du modèle
-python evaluate.py --retrieval           # retrieval seul (rapide)
-python evaluate.py --ville Ottawa        # une seule ville
+python evaluate.py                   # Évaluation complète (Retrieval + Réponses)
+python evaluate.py --retrieval       # Évaluation rapide de la recherche seule
+python evaluate.py --ville Ottawa    # Filtrer l'évaluation sur une ville spécifique
 ```
 
 ---
 
-## 📊 Évaluation
+## 📁 Structure du Projet
 
-### Méthode
-
-Le jeu de test `test_questions.json` contient **99 questions** sur **12 villes** (8 à 9 par ville), chacune associée à des **mots-clés attendus**. Pour chaque question, `evaluate.py` mesure :
-
-| Métrique | Définition |
-|---|---|
-| **Retrieval** (« bon passage trouvé ») | Le contexte récupéré contient au moins un mot-clé attendu |
-| **Réponse juste** | La réponse générée contient au moins un mot-clé attendu |
-| **Durée** | Temps total (recherche + reclassement + génération) |
-
-Les comparaisons sont normalisées (minuscules, sans accents ni ponctuation : `4 026 000` = `4026000`). Une question est **ignorée** si son mot-clé n'existe pas dans le fichier source, ce qui garantit des questions valides.
-
-Les questions ont ensuite été regroupées en 4 catégories pour l'analyse : **Dates**, **Chiffres**, **Personnes**, **Lieux et noms**.
-
-### Résultats globaux : CPU vs GPU
-
-| | CPU (référence) | GPU GTX 1650 | Évolution |
-|---|---|---|---|
-| Questions testées | 91 | 99 | |
-| Bon passage trouvé | 80,2 % (73/91) | **89 %** (88/99) | **+9 points** |
-| Réponses justes | 74,7 % (68/91) | **75 %** (74/99) | stable |
-| Durée moyenne | 55,3 s | **10,8 s** | **÷ 5,1** |
-
-> ⚠️ Les jeux de questions ne sont pas strictement identiques (91 vs 99 questions) : la comparaison est indicative.
-
-### ⏱️ Gain de vitesse
-
-![Comparaison des durées CPU / GPU](docs/img/comparaison_durees_cpu_gpu.png)
-
-Sur CPU, la majorité des réponses prennent **40 à 70 secondes** (avec des pointes au-delà de 130 s). Sur GPU, **toutes les réponses sauf une arrivent en moins de 20 secondes**, et la durée moyenne est homogène d'une ville à l'autre (~10 s), ce qui rend le chatbot réellement utilisable en conversation.
-
-### 🎯 Qualité des réponses (GPU)
-
-![Résultats après GPU](docs/img/gpu_resultats.png)
-
-- **Par ville** : Ottawa et Addis-Abeba atteignent 100 % de réponses justes ; les villes les plus difficiles sont **Buenos Aires** (≈ 50 %), **Riyad**, **Canberra** et **Pretoria** (≈ 62-67 %).
-- **Par catégorie** : les **dates** sont les mieux traitées (retrieval 100 %, réponses ≈ 81 %), suivies des chiffres (≈ 94 % / 78 %) et des lieux et noms (≈ 86 % / 72 %). Les questions sur les **personnes** sont les plus faibles (≈ 71 %), mais ne représentent que 7 questions.
-
-### 📉 Point de comparaison : résultats sur CPU
-
-![Résultats de référence sur CPU](docs/img/baseline_cpu_resultats.png)
-
-Sur CPU, la même tendance apparaît : dates parfaites (100 %), chiffres (≈ 76 %), personnes (≈ 71 %), lieux et noms (≈ 68 %). Les villes les plus faibles étaient déjà Buenos Aires, Riyad et Washington, ce qui suggère que **la difficulté vient du contenu des documents** plus que du matériel.
-
-### 🔗 Durée et longueur de la réponse
-
-![Durée selon la longueur de la réponse](docs/img/gpu_duree_vs_longueur.png)
-
-Sur GPU, la durée est **fortement corrélée à la longueur de la réponse (r = 0,77)** : la génération de tokens domine le temps total. Une réponse de ~50 caractères prend ≈ 10 s, une réponse de 400 caractères ≈ 17 s. Limiter `MAX_NEW_TOKENS` et demander des réponses courtes dans le prompt système reste donc le levier principal de vitesse.
-
-### 🧠 Analyse
-
-1. **Le GPU améliore surtout la vitesse, pas la justesse.** Le modèle et les paramètres étant identiques, la qualité des réponses reste stable (~75 %) ; le gain de 55 s à 11 s est le vrai bénéfice.
-2. **Le goulot d'étranglement est la génération.** Avec 89 % de bons passages récupérés pour 75 % de réponses justes, environ 14 points se perdent entre le contexte et la réponse : un modèle de 1,5 milliard de paramètres peine parfois à extraire le bon chiffre ou le bon nom dans un passage bruité.
-3. **La récupération est solide** grâce au préfixe `Ville :`, au filtrage par fichier et au reranking.
-4. **Les villes les plus faibles** (Buenos Aires, Riyad, Canberra, Pretoria) sont celles dont les articles contiennent des données multiples (plusieurs populations, superficies ou noms) qui prêtent à confusion.
+```text
+.
+├── app.py                   # Chatbot (RAG + interface Gradio + météo + logs)
+├── clean.py                 # Extraction et nettoyage des PDF Wikipédia
+├── indexation.py            # Découpage + embeddings + création de ChromaDB
+├── evaluate.py              # Évaluation automatique du chatbot
+├── test_questions.json      # 99 questions de test (12 villes)
+├── requirements.txt
+├── data/                    # PDF sources et textes *_nettoye.txt
+├── chroma_db/               # Base vectorielle (générée)
+├── logs.csv                 # Journal des questions (généré)
+├── evaluation_resultats.csv # Résultats détaillés de l'évaluation (généré)
+└── docs/img/                # Graphiques d'analyse de l'évaluation
+```
 
 ---
 
-## ⚠️ Limites connues
+## ⚠️ Limites et Pistes d'Amélioration
 
-- L'évaluation par **mots-clés** est stricte mais imparfaite : une réponse correcte reformulée sans le mot-clé est comptée fausse, et inversement.
-- Le jeu de test couvre **12 villes sur les 28 de la base**.
-- Les informations sont figées à la date des PDF Wikipédia (par exemple les maires ou populations peuvent évoluer).
-- Un modèle de 1,5 milliard de paramètres limite la finesse de raisonnement sur les questions complexes ou comparatives.
-
-## 🛣️ Pistes d'amélioration
-
-- Passer à un LLM plus grand (Qwen2.5-3B/7B) en quantification 4 bits (`bitsandbytes`)
-- Étendre le jeu de test aux 28 villes et ajouter une évaluation par LLM-juge
-- Recherche hybride (BM25 + vecteurs) pour les chiffres et noms propres
-- Mémoire de conversation pour les questions de suivi (« Et sa superficie ? »)
-- Déploiement (Hugging Face Spaces, Docker)
+- **Évaluation par mots-clés** : Strictement binaire, elle peut pénaliser une bonne réponse reformulée sans le mot exact. L'ajout d'un *LLM-as-a-Judge* permettrait d'affiner cette mesure.
+- **Couverture du jeu de test** : Étendre `test_questions.json` des 12 villes actuelles à l'ensemble des 28 destinations de la base.
+- **Recherche hybride** : Combiner une recherche lexicale (BM25) aux vecteurs pour améliorer la précision sur les chiffres et les noms propres.
+- **Mémoire conversationnelle** : Ajouter une reformulation des questions de suivi (ex: *« Et sa superficie ? »*).
 
 ---
 
-## 📈 Suivi d'utilisation avec Power BI
+👤 S.Younes
 
-Chaque question posée dans l'interface est enregistrée dans `logs.csv` (date, heure, ville détectée, question, durée, indicateur « sans info », réponse, villes des passages, extrait du contexte), prêt à être importé dans Power BI pour suivre l'usage et détecter les questions sans réponse.
-
----
-
-## 📚 Données et licences
-
-Les textes proviennent de pages **Wikipédia** exportées en PDF, distribuées sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr). Les modèles utilisés sont distribués par leurs auteurs via Hugging Face (Qwen2.5, sentence-transformers) : consultez leurs licences respectives.
-
-## 👤 Auteur
-
-*SYounes* · [GitHub](https://github.com/yosa789) 
