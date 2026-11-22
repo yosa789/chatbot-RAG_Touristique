@@ -1,0 +1,160 @@
+﻿ville;question;mots_cles;ville_detectee;retrieval_ok;reponse_ok;duree_s;reponse
+Abuja;Depuis quand Abuja est-elle la capitale du Nigeria ?;1991;Abuja;True;True;18.8;Depuis 1991, Abuja est devenue officiellement la capitale du Nigeria.
+Abuja;Quelle est la population d'Abuja en 2024 ?;4 026 000;Abuja;True;False;12.6;La population d'Abuja en 2024 est estimée à 4,026 millions d'habitants.
+Abuja;Quelle ville Abuja a-t-elle remplacée comme capitale ?;Lagos;Abuja;True;True;8.5;Abuja a remplacé Lagos comme capitale du Nigeria.
+Abuja;Quel est le nom du monolithe de 400 m au cœur de la ville ?;Aso Rock;Toutes les villes;True;True;9.5;Le monolithe de 400 m au cœur de la ville est appelé Aso Rock.
+Abuja;Comment s'appelle l'aéroport international d'Abuja ?;Nnamdi Azikiwe;Abuja;True;True;9.2;L'aéroport international d'Abuja porte le nom de Nnamdi Azikiwe.
+Abuja;Quelle est la saison sèche à Abuja ?;novembre;Abuja;True;True;12.0;La saison sèche à Abuja se présente de novembre à mars.
+Abuja;En quelle année l'université d'Abuja a-t-elle été fondée ?;2009;Abuja;True;True;6.8;En 2009.
+Abuja;Quelles villes sont jumelées avec Abuja ?;Toronto / Buffalo;Abuja;True;False;10.2;Il n'y a aucune information spécifique mentionnant des villes jumelées avec Abuja dans le contexte fourni.
+Addis-Abeba;Quelle organisation a son siège à Addis-Abeba ?;Union africaine;Addis-Abeba;True;True;9.0;L'Union africaine a son siège à Addis-Abeba.
+Addis-Abeba;Que signifie Addis-Abeba en amharique ?;Nouvelle fleur;Addis-Abeba;True;True;9.1;"Addis-Abeba en amharique signifie ""Nouvelle fleur""."
+Addis-Abeba;Qui a fondé Addis-Abeba ?;Menelik;Addis-Abeba;True;True;8.5;Menelik II a fondé Addis-Abeba.
+Addis-Abeba;Quelle est l'altitude d'Addis-Abeba ?;2 300 / 2 355 / 2 600;Addis-Abeba;True;True;10.3;L'altitude d'Addis-Abeba varie entre 2 300 et 2 600 mètres.
+Addis-Abeba;En quelle année le métro léger a-t-il été inauguré ?;2015;Toutes les villes;True;True;9.6;Le métro léger d'Addis-Abeba a été inauguré en 2015.
+Addis-Abeba;Quelle est la langue principale parlée à Addis-Abeba ?;amharique;Addis-Abeba;True;True;10.0;La langue principale parlée à Addis-Abeba est l'amharique.
+Addis-Abeba;Quand a lieu la saison des pluies à Addis-Abeba ?;juin;Addis-Abeba;True;True;9.2;La saison des pluies à Addis-Abeba se produit de juin à septembre.
+Wellington;Depuis quand Wellington est-elle la capitale de la Nouvelle-Zélande ?;1865;Wellington;True;True;9.7;Depuis 1865, Wellington est devenue la capitale de la Nouvelle-Zélande.
+Wellington;Que signifie Te Whanganui-a-Tara ?;grand port;Toutes les villes;True;True;8.1;"Te Whanganui-a-Tara signifie ""Grand Port de Tara"" en maori."
+Wellington;En l'honneur de qui Wellington est-elle nommée ?;Arthur Wellesley;Wellington;True;True;10.3;Bien sûr, Wellington est nommée en l'honneur du militaire anglais Arthur Wellesley, premier duc de Wellington.
+Wellington;Quel est le musée national de Wellington ?;Te Papa;Wellington;True;True;7.4;Le musée national de Wellington est le Te Papa Tongarewa.
+Wellington;Comment s'appelle l'aile exécutive du Parlement surnommée la Ruche ?;Beehive;Toutes les villes;True;True;8.8;L'aile exécutive du Parlement, surnommée la Ruche, porte le nom du Beehive.
+Wellington;Quel type de climat a Wellington ?;océanique;Wellington;True;True;9.2;Wellington a un climat océanique (Köppen: Cfb).
+Wellington;Quelle rue de Wellington est connue pour sa scène artistique et ses cafés ?;Cuba Street;Wellington;True;True;7.7;La Cuba Street est connue pour sa scène artistique et ses cafés.
+Wellington;Quel studio de Peter Jackson est installé à Wellington ?;Weta;Wellington;True;True;8.4;Peter Jackson a installé son studio Weta Studios à Wellington, dans le district oriental de Miramar.
+Wellington;Quelles villes sont jumelées avec Wellington ?;Harrogate / Xiamen / Sakai;Wellington;False;False;8.7;Il n'y a aucune information spécifique concernant les villes jumelées de Wellington dans ce contexte donné.
+Canberra;En quelle année le site de Canberra a-t-il été choisi comme capitale de l'Australie ?;1908;Canberra;True;True;9.9;En 1908, le site de Canberra a été choisi comme capitale de l'Australie.
+Canberra;Qui a remporté le concours international pour dessiner Canberra ?;Burley Griffin;Canberra;True;True;10.4;Walter Burley Griffin et Marion Mahony Griffin ont remporté le concours international pour dessiner Canberra en 1913.
+Canberra;Que signifie le mot Canberra en ngunnawal ?;lieu de rassemblement;Canberra;True;True;9.3;"Le mot ""canberra"" en ngunnawal signifie ""lieu de rassemblement""."
+Canberra;Quelle rivière a été barrée pour former le lac de Canberra ?;Molonglo;Canberra;True;True;8.6;La rivière Molonglo a été barrée en aval de la ville pour former le lac Burley Griffin.
+Canberra;Quel est le point culminant de Canberra ?;Majura;Canberra;False;False;9.4;Le point culminant de Canberra est le Monte Ainslie, situé à environ 3 kilomètres au nord-ouest de la ville.
+Canberra;Quelle est la population de Canberra en 2023 ?;466 566;Canberra;True;True;9.9;La population de Canberra en 2023 est estimée à 466 566 habitants.
+Canberra;À quelle distance de Sydney se trouve Canberra ?;280;Canberra;True;True;8.1;À environ 280 km de Sydney.
+Canberra;Quel surnom Canberra porte-t-elle en raison de sa végétation ?;capitale du bush;Canberra;True;True;8.9;"La ville de Canberra porte le surnom de ""capitale du bush""."
+Mexico;Quel est le nom de la ville précolombienne qui a précédé Mexico ?;Tenochtitlan;Mexico;True;True;9.0;La ville précolombienne qui a précédé Mexico était Tenochtitlan.
+Mexico;En quelle année Hernán Cortés a-t-il décidé de construire la capitale de la Nouvelle-Espagne ?;1522;Toutes les villes;True;False;10.2;Hernán Cortés a décidé de construire la capitale de la Nouvelle-Espagne en 1521.
+Mexico;Comment appelle-t-on familièrement les habitants de Mexico ?;chilango;Mexico;True;True;8.9;Les habitants de Mexico sont familièrement appelés chilangos.
+Mexico;Quelle est la population de la ville de Mexico en 2020 ?;9 209 944;Mexico;True;True;11.3;La population de la ville de Mexico en 2020 était de 9 209 944 habitants.
+Mexico;À quelle altitude se trouve Mexico ?;2 240 / 2 400;Mexico;True;True;7.7;Mexico se trouve à une altitude de 2 240 mètres.
+Mexico;En combien de délégations Mexico est-elle divisée ?;seize;Mexico;True;False;10.2;En 1970, la ville de Mexico est divisée en quatre délégations.
+Mexico;Quel lac se trouvait autour de Mexico-Tenochtitlan ?;Texcoco;Mexico;True;True;8.9;Le lac Texcoco se trouvait autour de Mexico-Tenochtitlan.
+Mexico;Quel site de Mexico est classé au patrimoine mondial de l'UNESCO avec le centre historique ?;Xochimilco;Mexico;True;False;10.8;Le centre historique de Mexico, situé dans le centre-ville, est classé sur la liste du patrimoine mondial de l'UNESCO.
+Buenos Aires;Quelle est la population de Buenos Aires en 2022 ?;3 120 612 / 3 121 707;Buenos Aires;True;True;11.1;La population de Buenos Aires en 2022 est estimée à 3 120 612 habitants.
+Buenos Aires;Comment appelle-t-on les habitants de Buenos Aires ?;Portègnes;Buenos Aires;True;False;9.8;"Les habitants de Buenos Aires sont appelés ""Buenos-Airiens"" ou ""Bonaerenses""."
+Buenos Aires;En quelle année le métro de Buenos Aires a-t-il été inauguré ?;1913;Buenos Aires;True;True;7.8;En décembre 1913.
+Buenos Aires;Sur quel estuaire est située Buenos Aires ?;Río de la Plata;Buenos Aires;True;True;10.2;Buenos Aires est située sur la rive sud-ouest de l'estuaire du Río de la Plata.
+Buenos Aires;Que signifie Buenos Aires en espagnol ?;Bons Vents / Bon Vent;Buenos Aires;True;False;8.7;"Buenos Aires signifie ""Bien aire"" en espagnol."
+Buenos Aires;Qui a fondé Buenos Aires en 1536 ?;Pedro de Mendoza;Buenos Aires;False;False;7.9;Juan de Matienzo a fondé Buenos Aires en 1536.
+Buenos Aires;Quelle est la superficie de Buenos Aires ?;203;Buenos Aires;False;False;8.9;La superficie de Buenos Aires est d'environ 147 km².
+Buenos Aires;Qui est le maire de Buenos Aires ?;Jorge Macri;Buenos Aires;True;True;8.1;Le maire de Buenos Aires est Jorge Macri.
+Brasilia;Quand Brasilia a-t-elle été inaugurée ?;21 avril 1960;Brasilia;True;False;7.8;En 1960, Brasilia a été inaugurée avec grand spectacle.
+Brasilia;Qui a conçu les bâtiments principaux de Brasilia ?;Niemeyer;Brasilia;True;True;7.9;Oscar Niemeyer a conçu les bâtiments principaux de Brasilia.
+Brasilia;Qui est l'auteur du plan pilote de Brasilia ?;Lúcio Costa;Brasilia;True;True;7.7;L'auteur du plan pilote de Brasilia est Lúcio Costa.
+Brasilia;À quelle altitude se trouve Brasilia ?;1 172;Brasilia;True;True;8.4;À 1 172 mètres d'altitude.
+Brasilia;En quelle année Brasilia a-t-elle été inscrite au patrimoine mondial de l'UNESCO ?;1987;Brasilia;False;True;6.8;En 1987.
+Brasilia;Quel lac artificiel borde Brasilia ?;Paranoá;Brasilia;True;True;7.0;Le lac Paranoá borde Brasilia.
+Brasilia;Quel président a lancé la construction de Brasilia ?;Kubitschek;Brasilia;True;True;9.3;Le président qui a lancé la construction de Brasilia était Juscelino Kubitschek.
+Brasilia;Comment appelle-t-on les ouvriers venus construire la ville ?;Candangos;Toutes les villes;True;True;9.0;Les ouvriers venus construire la ville sont appelés Candangos.
+Brasilia;Quel est le mois le plus sec à Brasilia ?;juin;Brasilia;True;True;8.5;Le mois le plus sec à Brasilia est juin, avec 8,8 mm de précipitations.
+Ottawa;Sous quel nom Ottawa a-t-elle été fondée en 1826 ?;Bytown;Ottawa;True;True;10.3;Ottawa a été fondée en 1826 sous le nom de Bytown.
+Ottawa;Quel canal historique se transforme en patinoire en hiver à Ottawa ?;Rideau;Ottawa;True;True;9.3;Le canal Rideau se transforme en patinoire linéaire en hiver à Ottawa.
+Ottawa;Quelle fleur est célébrée par un grand festival à Ottawa ?;tulipe;Ottawa;True;True;8.7;La tulipe est célébrée par un grand festival à Ottawa.
+Ottawa;Comment s'appelle le métro léger d'Ottawa ?;O-Train;Ottawa;True;True;9.9;L'O-Train, également connu sous le nom de métro léger d'Ottawa, est le système de transport en commun léger utilisé à Ottawa.
+Ottawa;Quelle est la population d'Ottawa en 2021 ?;1 017 449;Ottawa;True;True;10.4;La population d'Ottawa en 2021 était de 1 017 449 habitants.
+Ottawa;Quel est le gentilé des habitants d'Ottawa ?;Ottavien;Ottawa;True;True;9.1;Les habitants d'Ottawa sont appelés Ottavien et Ottavienne.
+Ottawa;Quelle tempête a paralysé l'est de l'Ontario en 1998 ?;verglas;Toutes les villes;True;True;15.9;"En 1998, une tempête de pluie verglaçante a paralysé l'est de l'Ontario et le sud-ouest du Québec. Cette ""crise du verglas"" a causé plusieurs dizaines de millimètres de glace en seulement cinq jours."
+Ottawa;Quelle est la résidence officielle du premier ministre à Ottawa ?;Sussex;Ottawa;True;True;8.5;La résidence officielle du premier ministre à Ottawa est le 24, promenade Sussex.
+Washington;Quand Washington a-t-elle été fondée ?;1791;Washington;True;True;8.6;Washington a été fondée en janvier 1791.
+Washington;Quel ingénieur français a conçu le plan de Washington ?;L'Enfant;Washington;True;True;9.6;Pierre Charles L'Enfant, un ingénieur français, a conçu le plan de Washington.
+Washington;En hommage à qui Washington est-elle nommée ?;George Washington;Washington;True;True;9.4;Washington est nommée en hommage au premier président des États-Unis, George Washington.
+Washington;Quel fleuve borde Washington ?;Potomac;Washington;True;True;7.4;Le fleuve qui borde Washington est le Potomac.
+Washington;Qui est la maire de Washington ?;Muriel Bowser;Washington;True;True;9.9;Muriel Bowser est la maire de Washington. Elle a été élue en janvier 2015.
+Washington;Combien d'ambassades et représentations diplomatiques Washington accueille-t-elle ?;176;Washington;True;True;8.1;Washington accueille environ 176 ambassades et représentations diplomatiques.
+Washington;Quelle est la devise du district de Columbia ?;Justice pour tous;Toutes les villes;False;False;8.5;Le district de Columbia n'a pas de devise officielle.
+Washington;Quelle est la superficie de Washington ?;177;Washington;True;True;8.5;La superficie de Washington est de 177 km².
+Pretoria;Quel est le surnom de Pretoria ?;Jacaranda;Pretoria;True;True;8.8;"Le surnom de Pretoria est la ""ville des Jacarandas""."
+Pretoria;En hommage à qui Pretoria a-t-elle été nommée ?;Andries Pretorius;Pretoria;False;False;9.4;Pretoria a été nommée en hommage aux Boers et à leurs ancêtres.
+Pretoria;À quelle altitude se trouve Pretoria ?;1 370;Pretoria;True;True;10.0;Pretoria se trouve à environ 1 370 mètres d'altitude.
+Pretoria;Quelle est la devise de Pretoria ?;Praestantia Praevaleat;Pretoria;False;False;10.1;Je suis désolé, mais je n'ai aucune information spécifique concernant la devise de Pretoria. Les informations fournies ne mentionnent pas de devise nationale.
+Pretoria;Quelle rivière traverse Pretoria ?;Apies;Pretoria;True;True;6.8;La rivière Apies traverse Pretoria.
+Pretoria;Quel est le nom zoulou de Pretoria ?;ePitoli;Pretoria;True;True;9.6;"Le nom zoulou de Pretoria est ""ePitoli""."
+Pretoria;Quelle est la population de Pretoria en 2011 ?;741 651;Pretoria;True;True;10.7;La population de Pretoria en 2011 était de 741 651 habitants.
+Pretoria;Quelle municipalité administre Pretoria ?;Tshwane;Pretoria;True;True;9.2;La municipalité qui administre Pretoria est la Métropole de Tshwane.
+Riyad;Que signifie Riyad en arabe ?;jardins / oasis;Riyad;True;True;9.1;"Riyad en arabe signifie ""les jardins"" ou ""les oasis""."
+Riyad;Quelle est la superficie de Riyad ?;1 554;Riyad;True;True;9.3;La superficie de Riyad est de 1,554 kilomètres carrés.
+Riyad;Quelle tour de Riyad culmine à 302 m ?;Kingdom Centre;Riyad;True;False;9.8;La tour de Riyad qui culmine à 302 mètres est la Tour Al Faisaliah.
+Riyad;Sur quel plateau se trouve Riyad ?;Nejd;Riyad;True;True;7.5;Riyad se trouve sur un large plateau appelé le Nejd.
+Riyad;En quelle année Ibn Séoud a-t-il reconquis Riyad ?;1902;Riyad;True;False;7.7;En 1932.
+Riyad;En quelle année le royaume d'Arabie saoudite a-t-il été créé ?;1932;Riyad;True;True;7.8;En 1932.
+Riyad;Quel est le club de football le plus titré de Riyad ?;Al Hilal;Riyad;True;True;6.6;Al Hilal est le club de football le plus titré de Riyad.
+Riyad;Comment s'appelle le projet de bâtiment cubique de 400 mètres de haut ?;Mukaab;Toutes les villes;True;True;8.4;Le projet de bâtiment cubique de 400 mètres de haut est appelé Mukaab.
+Riyad;Quelle rue est surnommée les Champs-Élysées de Riyad ?;Tahlia;Riyad;False;False;8.6;La rue Thumairià, située à Riyad, est connue sous le surnom des Champs-Élysées de Riyad.
+Barcelone;Quel architecte a conçu la Sagrada Família à Barcelone ?;Gaudí;Barcelone;True;True;10.0;L'architecte Antoni Gaudí a conçu la Basilique Sagrada Família à Barcelone.
+Barcelone;De quelle communauté autonome Barcelone est-elle la capitale ?;Catalogne;Barcelone;True;True;9.1;Barcelone est la capitale de la Communauté autonome de Catalogne.
+Barcelone;Quelle mer borde Barcelone ?;Méditerranée;Barcelone;True;True;8.4;La mer Méditerranée borde Barcelone.
+Barcelone;En quelle année Barcelone a-t-elle accueilli les Jeux olympiques d'été ?;1992;Barcelone;True;True;9.8;En 1992, Barcelone a accueilli les Jeux olympiques d'été.
+Barcelone;Comment s'appelle le célèbre boulevard piétonnier de Barcelone ?;Rambla;Barcelone;True;True;9.4;Le célèbre boulevard piétonnier de Barcelone est appelé La Rambla.
+Berlin;En quelle année le mur de Berlin est-il tombé ?;1989;Berlin;True;True;8.6;Le mur de Berlin est tombé en 1989.
+Berlin;Quelle rivière traverse Berlin ?;Spree;Berlin;True;True;10.8;Berlin est traversée par plusieurs rivières, notamment la Havel, la Sprée, la Dahme, la Wuhle et l'Erpe.
+Berlin;En quelle année Berlin est-elle redevenue la capitale de l'Allemagne réunifiée ?;1990 / 1999;Berlin;True;True;10.7;En 1990, après la réunification allemande, Berlin devient de nouveau la capitale de l'Allemagne.
+Berlin;Quelle porte emblématique de Berlin se trouve sur la Pariser Platz ?;Brandebourg;Berlin;True;True;11.3;Sur la Pariser Platz, se trouve la porte de Brandebourg (Brandenburger Tor), véritable symbole de Berlin et de l'Allemagne réunifiée.
+Berlin;Quelle île de Berlin regroupe plusieurs grands musées classés à l'UNESCO ?;Île aux Musées / Museumsinsel;Berlin;True;True;22.2;L'Île aux Musées, située sur l'île des musées dans la capitale berlinoise, regroupe plusieurs grands musées classés à l'UNESCO. Ces musées comprennent :  - Le Musée de Pergame, - Le Bode-Museum, - L'Ancien Musée des Antiquités Grecques, - Le Nouveau Musée d'Antiquités Égyptiennes, - L'Ancienne Galerie Nationale.  Ces institutions culturelles sont essentiellement présentes sur l'île des musées, offrant une vue panoramique sur la ville de Berlin.
+Casablanca;Quelle mosquée célèbre de Casablanca est construite au bord de l'océan ?;Hassan II;Casablanca;True;True;9.2;La grande mosquée Hassan-II se trouve en bord de mer à Casablanca.
+Casablanca;Quel océan borde Casablanca ?;Atlantique;Casablanca;True;True;6.6;Casablanca borde l'océan Atlantique.
+Casablanca;Que signifie Casablanca en espagnol ?;maison blanche;Casablanca;True;False;7.7;"Casablanca en espagnol est ""Casablanca""."
+Casablanca;Dans quelle région administrative se trouve Casablanca ?;Settat;Casablanca;True;True;9.3;Casablanca fait partie de la région administrative appelée Casablanca-Settat.
+Casablanca;Quel surnom Casablanca porte-t-elle au Maroc ?;capitale économique;Casablanca;False;False;9.4;"Casablanca porte le surnom de ""la Ville Blanche"" au Maroc."
+Londres;Quel fleuve traverse Londres ?;Tamise;Londres;True;True;9.1;Le fleuve qui traverse Londres d'ouest en est est la Tamise.
+Londres;Quel palais de Londres abrite Big Ben ?;Westminster;Londres;True;True;8.0;Le Palais de Westminster abrite Big Ben.
+Londres;En quelle année a eu lieu le grand incendie de Londres ?;1666;Londres;True;True;9.0;Le grand incendie de Londres s'est produit en 1666.
+Londres;Quelle est la résidence officielle du monarque à Londres ?;Buckingham;Londres;True;True;7.1;La résidence officielle du monarque à Londres est le Palais de Buckingham.
+Londres;En quelle année Londres a-t-elle accueilli ses derniers Jeux olympiques d'été ?;2012;Londres;True;True;8.8;Londres a accueilli ses derniers Jeux olympiques d'été en 2012.
+Lyon;Quels deux cours d'eau se rejoignent à Lyon ?;Saône;Lyon;True;True;9.7;Les deux cours d'eau qui se rejoignent à Lyon sont le Rhône et la Saône.
+Lyon;Quelle colline de Lyon est dominée par une basilique ?;Fourvière;Lyon;True;True;9.6;La basilique Notre-Dame de Fourvière domine la colline de Fourvière à Lyon.
+Lyon;Quel festival lumineux a lieu chaque année à Lyon en décembre ?;Fête des Lumières;Lyon;True;True;11.1;La Fête des Lumières, aussi appelée Illuminations, est un festival lumineux qui se tient chaque année à Lyon le soir du 8 décembre.
+Lyon;Comment appelle-t-on les passages couverts typiques de Lyon ?;traboules;Lyon;True;True;7.8;Les passages couverts typiques de Lyon sont appelés les traboules.
+Lyon;Quel chef célèbre est associé à la gastronomie lyonnaise ?;Bocuse;Toutes les villes;True;True;9.5;Paul Bocuse est un chef célèbre associé à la gastronomie lyonnaise.
+Madrid;Quel petit fleuve traverse Madrid ?;Manzanares;Madrid;True;True;10.8;Le principal cours d'eau de Madrid est le Manzanares, qui traverse la ville du nord au sud en passant par le mont du Pardo, où il alimente le barrage du même nom.
+Madrid;Quel grand musée de Madrid expose Les Ménines de Vélasquez ?;Prado;Madrid;True;True;9.1;Le musée du Prado de Madrid expose Les Ménines de Velázquez.
+Madrid;Quel grand parc se trouve au centre de Madrid ?;Retiro;Madrid;True;True;8.4;Le Parc del Retiro se trouve au centre de Madrid.
+Madrid;Quel club de football célèbre est basé à Madrid ?;Real Madrid;Madrid;True;True;9.0;Le Real Madrid est le club de football célèbre qui est basé à Madrid.
+Madrid;Depuis quand Madrid est-elle la capitale de l'Espagne ?;1561;Madrid;False;False;8.0;Madrid a été la capitale de l'Espagne depuis 1931.
+Marrakech;Quel surnom Marrakech porte-t-elle en raison de la couleur de ses murs ?;ville rouge / ville ocre;Marrakech;True;True;8.8;"Marrakech porte le surnom de ""la ville rouge""."
+Marrakech;Quelle place de Marrakech accueille conteurs et musiciens ?;Jemaa el-Fna / Jemaa el Fna;Marrakech;False;False;25.5;Marrakech accueille des chanteurs et musiciens principalement lors des festivals et événements culturels locaux. Parmi ces événements, on trouve notamment :  - Le Festival Samaa des musiques sacrées, qui se déroule en juillet. - Le Festival Danse pour Tous, qui célèbre la danse dans divers styles et formes. - Le Festival Artes en Marrakech, qui regroupe des expositions d'arts plastiques et des performances artistiques.  Ces événements offrent une occasion unique de découvrir et d'interagir avec les artistes locaux et internationaux, contribuant ainsi à la richesse culturelle de
+Marrakech;Quelle mosquée de Marrakech est célèbre pour son minaret ?;Koutoubia;Marrakech;True;True;10.4;La Mosquée Koutoubia de Marrakech est célèbre pour son minaret.
+Marrakech;Quelle chaîne de montagnes domine Marrakech ?;Atlas;Marrakech;True;True;9.4;La chaîne de montagnes qui domine Marrakech est le Haut Atlas.
+Marrakech;Quelle dynastie a fondé Marrakech ?;Almoravides;Marrakech;True;False;12.3;Marrakech a été fondée en 1071 par le souverain berbère sanhajien almoravide Youssef ben Tachfine.
+Marseille;Quel peuple a fondé Marseille vers 600 av. J.-C. ?;Phocéens;Marseille;True;False;15.5;Vers 600 av. J.-C., Marseille a été fondée par des colons grecs venus de Phocée, aujourd'hui Foça en Turquie. Ces colons ont apporté leur culture et leurs traditions, contribuant ainsi à la naissance de cette ville importante.
+Marseille;Quelle basilique domine Marseille ?;Notre-Dame de la Garde;Marseille;True;True;8.7;La Basilique Notre-Dame-de-la-Garde domine Marseille.
+Marseille;Quel parc national borde Marseille ?;Calanques;Marseille;True;True;8.2;Le Parc national des Calanques borde Marseille.
+Marseille;Quel club de football célèbre est basé à Marseille ?;Olympique de Marseille;Marseille;True;True;9.5;L'Olympique de Marseille est le club de football célèbre qui est basé à Marseille.
+Marseille;Comment s'appelle le port historique de Marseille ?;Vieux-Port;Marseille;True;False;23.1;Le grand port maritime de Marseille (GPMM) est connu sous différents noms selon les langues :  - En français : Grand Port Maritime de Marseille (GPMM) - En italien : Porto di Massilia - En catalan : Port de Massalia - En espagnol : Puerto de Massalia - En portugais : Porto de Massala - En anglais : Port of Marseille - En allemand : Port von Marseille - En arabe : مرسيليا (Marsilya)  Cette ancienne côte de la mer Méditerranée a joué un rôle crucial dans l'histoire maritime de Marseille.
+Paris;Quel fleuve traverse Paris ?;Seine;Paris;True;True;8.2;Le fleuve qui traverse Paris est la Seine.
+Paris;En quelle année la tour Eiffel a-t-elle été achevée à Paris ?;1889;Paris;True;True;9.2;La tour Eiffel a été achevée en 1889 à Paris.
+Paris;Quel musée de Paris abrite la Joconde ?;Louvre;Paris;True;True;8.9;Le Musée du Louvre abrite La Joconde, le célèbre tableau.
+Paris;Quelle cathédrale de Paris a subi un grave incendie en 2019 ?;Notre-Dame;Paris;True;True;8.7;La cathédrale Notre-Dame de Paris a subi un grave incendie en 2019.
+Paris;Combien d'arrondissements compte Paris ?;vingt / 20 arrondissements;Paris;False;True;8.0;Paris compte 20 arrondissements.
+Pékin;Comment s'appelle la cité impériale située au centre de Pékin ?;Cité interdite;Pékin;True;True;9.7;La cité impériale située au centre de Pékin est appelée la Cité interdite.
+Pékin;En quelle année Pékin a-t-elle accueilli les Jeux olympiques d'été ?;2008;Pékin;True;True;8.6;En 2008, Pékin a accueilli les Jeux olympiques d'été.
+Pékin;Quelle grande place se trouve au centre de Pékin ?;Tian'anmen / Tiananmen;Pékin;True;True;8.5;La place Tian'anmen se trouve au centre de Pékin.
+Pékin;Quelle célèbre muraille se trouve près de Pékin ?;Grande Muraille;Pékin;True;True;7.4;La Grande Muraille de Chine traverse à proximité de Pékin.
+Pékin;Quel empereur Ming a déplacé la capitale à Pékin ?;Yongle;Pékin;False;False;11.8;Zhu Yuanzhang, le premier empereur de la dynastie Ming, a déplacé la capitale de la dynastie Ming à Pékin en 1368.
+Rabat;Quel fleuve traverse Rabat ?;Bouregreg;Rabat;True;True;8.5;Le fleuve qui traverse Rabat est le Bouregreg.
+Rabat;Quelle ville se trouve en face de Rabat sur l'autre rive du Bouregreg ?;Salé;Rabat;True;True;8.4;La ville voisine de Rabat sur l'autre rive du Bouregreg est Salé.
+Rabat;Quel mausolée de Rabat abrite la tombe de Mohammed V ?;Mohammed V;Rabat;True;True;11.2;Le mausolée de Mohammed V de Rabat abrite la tombe du défunt roi Mohammed V et ses deux fils, le défunt roi Hassan II et son frère cadet Moulay Abdellah.
+Rabat;En quelle année Rabat a-t-elle été inscrite au patrimoine mondial de l'UNESCO ?;2012;Rabat;True;True;7.8;En 2012.
+Rabat;Quelle dynastie a fondé la kasbah des Oudayas à Rabat ?;Almohades;Rabat;True;False;9.2;Les Almoravides ont fondé la kasbah des Oudayas à Rabat.
+Singapour;En quelle année Singapour est-elle devenue indépendante ?;1965;Singapour;True;True;9.4;Singapour est devenue indépendante le 9 août 1965.
+Singapour;Qui a fondé le comptoir britannique de Singapour en 1819 ?;Raffles;Singapour;True;True;8.8;Sir Thomas Stamford Raffles a fondé le comptoir britannique de Singapour en 1819.
+Singapour;Quelle langue chinoise est l'une des langues officielles de Singapour ?;mandarin;Singapour;True;False;9.0;La Tamoul est l'une des langues officielles de Singapour.
+Singapour;Quel célèbre hôtel de Singapour est surmonté d'un toit-terrasse en forme de bateau ?;Marina Bay;Singapour;True;False;8.9;L'hôtel Marriott de Singapour est surmonté d'un toit-terrasse en forme de bateau.
+Singapour;Comment s'appelle la statue mi-lion mi-poisson, emblème de Singapour ?;Merlion;Singapour;True;True;7.7;La statue mi-lion mi-poisson, emblème de Singapour, est appelée Merlion.
+Sydney;Comment s'appelle le grand pont qui traverse la baie de Sydney ?;Harbour Bridge;Sydney;True;True;8.2;Le grand pont qui traverse la baie de Sydney est appelé l'Harbour Bridge.
+Sydney;En quelle année Sydney a-t-elle été fondée ?;1788;Sydney;True;True;8.1;En 1788, Sydney a été fondée par le capitaine Arthur Phillip.
+Sydney;Quel gouverneur a fondé la colonie de Sydney ?;Phillip;Sydney;True;True;8.3;Le capitaine Arthur Phillip a fondé la colonie de Sydney en 1788.
+Sydney;Quelle plage est la plus célèbre de Sydney ?;Bondi;Sydney;True;True;7.5;La plage de Bondi est la plus célèbre de Sydney.
+Tokyo;En quelle année Tokyo est-elle devenue la capitale du Japon ?;1868;Tokyo;True;True;10.3;Tokyo est devenue la capitale du Japon en 1868 après la restauration de l'empereur.
+Tokyo;Quelle tour de communication est la plus haute de Tokyo ?;Skytree;Tokyo;False;True;9.3;La tour de communication la plus haute de Tokyo est la Tokyo Skytree, avec une hauteur totale de 634 mètres.
+Tokyo;En quelle année Tokyo a-t-elle accueilli ses premiers Jeux olympiques d'été ?;1964;Tokyo;True;True;10.8;Tokyo a accueilli ses premiers Jeux olympiques d'été en 1964.
+Tokyo;Quel séisme a détruit une grande partie de Tokyo en 1923 ?;Kantō / Kanto;Tokyo;True;True;9.1;Le séisme de magnitude 7,9 de Kantō en 1923 a détruit une grande partie de Tokyo.
+Tokyo;Quel quartier de Tokyo est célèbre pour son carrefour très fréquenté ?;Shibuya;Tokyo;True;True;9.5;Le quartier de Shibuya est célèbre pour son carrefour très fréquenté.

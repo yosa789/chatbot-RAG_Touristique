@@ -1,0 +1,14 @@
+gradio
+torch
+transformers
+sentence-transformers
+langchain-huggingface
+langchain-community
+langchain-chroma
+langchain-text-splitters
+chromadb
+pypdf
+requests
+pandas
+numpy
+matplotlib
