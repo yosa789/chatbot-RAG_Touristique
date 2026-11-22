@@ -92,7 +92,6 @@ app.py                  chatbot (recherche + modèle + interface + météo + log
 evaluate.py             test automatique avec test\_questions.json
 analyse.py              graphiques à partir de evaluation\_resultats.csv
 test\_questions.json     179 questions de test
-ANALYSE.md              analyse des résultats
 requirements.txt        bibliothèques Python à installer
 data/                   PDF et textes \*\_nettoye.txt
 chroma\_db/              base de données (créée par indexation.py)
